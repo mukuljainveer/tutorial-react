@@ -66,3 +66,32 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+example: 
+
+{
+#   author(id:2){
+#     books {
+#       name,
+#       genre
+#     }
+#   },
+#   books{
+#     name,
+#     author {
+#       name
+#     }
+#   },
+  authors{
+    name,
+    id
+  }
+}
+
+
+# mutation{
+#   addAuthor(name:"Mukul",age:0,id:4){
+#     name
+#   }
+# }
