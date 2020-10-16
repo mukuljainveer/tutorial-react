@@ -103,18 +103,19 @@ const Mutation = new GraphQLObjectType({
         return data;
       },
     },
-    // addBook: {
-    //   args: {
-    //     name: { type: GraphQLString },
-    //     genre: { type: GraphQLString },
-    //     author_id: { type: qraphql.GraphQLID },
-    //   },
-    //   resolve(parent, args) {
-    //     let data = { name: args.name, genre: args.genre, author_id: args.author_id };
-    //     books.push(data);
-    //     return data;
-    //   },
-    // },
+    addBook: {
+      type:BookType,
+      args: {
+        name: { type: GraphQLString },
+        genre: { type: GraphQLString },
+        author_id: { type: qraphql.GraphQLID },
+      },
+      resolve(parent, args) {
+        let data = { name: args.name, genre: args.genre, author_id: args.author_id };
+        books.push(data);
+        return data;
+      },
+    }
   },
 });
 

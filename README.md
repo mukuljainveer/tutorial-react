@@ -70,24 +70,30 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 example: 
 
-{
+# {
 #   author(id:2){
 #     books {
 #       name,
 #       genre
 #     }
 #   },
-#   books{
+
+# { 
+# 	books{
 #     name,
+#     genre
 #     author {
 #       name
 #     }
-#   },
-  authors{
-    name,
-    id
-  }
-}
+#   }
+# }
+
+# {
+#   authors{
+#     name,
+#     id
+#   }
+# }
 
 
 # mutation{
@@ -95,3 +101,17 @@ example:
 #     name
 #   }
 # }
+
+
+# mutation{
+  # addAuthor(name:"Mukul",age:0,id:4){
+  #   name
+  # }
+# }
+
+mutation{
+  addBook(name:"Mukul Biography",author_id:4,genre:"Intresting"){
+    name
+  }
+}
+
