@@ -15,9 +15,10 @@ const BookList = () => {
 
   return (
     <div>
-        {console.log('loading',loading,'error',error,'data',data)}
+      {console.log("loading", loading, "error", error, "data", data)}
+      <h1>Book List</h1>
       <ul>
-        <li>Book1</li>
+        <li>BookList</li>
       </ul>
     </div>
   );

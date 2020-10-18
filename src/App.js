@@ -13,13 +13,14 @@ import User from "./components/User";
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 import { ApolloProvider } from "@apollo/client";
 import BookList from "./components/GraphQL/BookList";
+import BookListClass from "./components/GraphQL/BookListClass";
 
 // 1) Create the Context
 // 2) Provide a Context Value
 // 3) Consume the Context Value
 
 const client = new ApolloClient({
-  uri: "http://localhost:4000/graphql",
+  uri: "http://localhost:8080/graphql",
   cache: new InMemoryCache(),
 });
 
@@ -36,11 +37,12 @@ export class App extends Component {
           {/* <HoverCounter/> */}
           {/* <User/> */}
           {/* <Test/> */}
-          {/* <UserProvider value="Mukul Jain">
+          <UserProvider value="Mukul Jain">
             <ComponentC/>
-          </UserProvider> */}
+          </UserProvider>
 
-          <BookList/>
+          {/* <BookList/> */}
+          <BookListClass/>
         </div>
       </ApolloProvider>
     );
