@@ -14,6 +14,7 @@ import { ApolloClient, InMemoryCache } from "@apollo/client";
 import { ApolloProvider } from "@apollo/client";
 import BookList from "./components/GraphQL/BookList";
 import BookListClass from "./components/GraphQL/BookListClass";
+import Mic from "./demo/Mic";
 
 // 1) Create the Context
 // 2) Provide a Context Value
@@ -37,12 +38,13 @@ export class App extends Component {
           {/* <HoverCounter/> */}
           {/* <User/> */}
           {/* <Test/> */}
-          <UserProvider value="Mukul Jain">
+          {/* <UserProvider value="Mukul Jain">
             <ComponentC/>
-          </UserProvider>
+          </UserProvider> */}
 
           {/* <BookList/> */}
-          <BookListClass/>
+          {/* <BookListClass/> */}
+          <Mic/>
         </div>
       </ApolloProvider>
     );
