@@ -15,6 +15,9 @@ import { ApolloProvider } from "@apollo/client";
 import BookList from "./components/GraphQL/BookList";
 import BookListClass from "./components/GraphQL/BookListClass";
 import Mic from "./demo/Mic";
+import HoverEffect from "./demo/material/HoverEffect";
+import { ThemeProvider } from "@material-ui/core";
+import theme from "./demo/material/theme/theme";
 
 // 1) Create the Context
 // 2) Provide a Context Value
@@ -44,7 +47,11 @@ export class App extends Component {
 
           {/* <BookList/> */}
           {/* <BookListClass/> */}
-          <Mic/>
+          {/* <Mic/> */}
+
+          <ThemeProvider theme={theme}>
+            <HoverEffect/>  
+          </ThemeProvider>
         </div>
       </ApolloProvider>
     );
