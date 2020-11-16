@@ -18,6 +18,7 @@ import Mic from "./demo/Mic";
 import HoverEffect from "./demo/material/HoverEffect";
 import { ThemeProvider } from "@material-ui/core";
 import theme from "./demo/material/theme/theme";
+import Timers from "./components/Timers";
 
 // 1) Create the Context
 // 2) Provide a Context Value
@@ -49,9 +50,10 @@ export class App extends Component {
           {/* <BookListClass/> */}
           {/* <Mic/> */}
 
-          <ThemeProvider theme={theme}>
+          {/* <ThemeProvider theme={theme}>
             <HoverEffect/>  
-          </ThemeProvider>
+          </ThemeProvider> */}
+          <Timers/>
         </div>
       </ApolloProvider>
     );
