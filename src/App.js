@@ -19,6 +19,15 @@ import HoverEffect from "./demo/material/HoverEffect";
 import { ThemeProvider } from "@material-ui/core";
 import theme from "./demo/material/theme/theme";
 import Timers from "./components/Timers";
+import BottomScroller from "./demo/BottomScroller";
+import CustomAudioPlayer from "./demo/CustomAudioPlayer";
+import Hooks from "./demo/Hooks";
+import DatePicker from "./demo/material/DatePicker";
+import moment from "moment";
+import FormValidation from "./demo/validation/FormValidation";
+import FormValidationType2 from "./demo/validation/FormValidationType2";
+import ResponsiveDateRangePicker from "./demo/material/DateRangePicker2";
+import Form from "./stepform/Form";
 
 // 1) Create the Context
 // 2) Provide a Context Value
@@ -29,11 +38,19 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+const timeFormat=()=>{
+  return moment('01 Dec 2020 12:15')
+}
+
 export class App extends Component {
   render() {
     return (
       <ApolloProvider client={client}>
         <div className="App">
+          <Form/>
+          {/* {timeFormat()} */}
+          {/* <FormValidation/> */}
+          {/* <FormValidationType2/> */}
           {/* <ParentComponent/> */}
           {/* <RefsDemo/> */}
           {/* <FocusInput/> */}
@@ -50,10 +67,16 @@ export class App extends Component {
           {/* <BookListClass/> */}
           {/* <Mic/> */}
 
-          {/* <ThemeProvider theme={theme}>
-            <HoverEffect/>  
+          {/* <ThemeProvider theme={theme}> */}
+            {/* <HoverEffect/>   */}
+            {/* <DatePicker/>
           </ThemeProvider> */}
-          <Timers/>
+          {/* <ResponsiveDateRangePicker/> */}
+
+          {/* <Timers/> */}
+          {/* <BottomScroller/> */}
+          {/* <CustomAudioPlayer/> */}
+          {/* <Hooks/> */}
         </div>
       </ApolloProvider>
     );

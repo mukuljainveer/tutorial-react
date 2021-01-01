@@ -5,7 +5,7 @@ function Timers() {
   return (
     <div>
       <Timer
-        initialTime={00000}
+        initialTime={0}
         startImmediately={false}
         onStart={() => console.log("onStart hook")}
         onResume={() => console.log("onResume hook")}
