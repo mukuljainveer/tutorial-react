@@ -28,6 +28,9 @@ import FormValidation from "./demo/validation/FormValidation";
 import FormValidationType2 from "./demo/validation/FormValidationType2";
 import ResponsiveDateRangePicker from "./demo/material/DateRangePicker2";
 import Form from "./stepform/Form";
+import RefHook from "./demo/RefHook";
+import LimitValidation from "./demo/validation/LimitValidation";
+import SignupForm from "./demo/validation/formik/SignupForm";
 
 // 1) Create the Context
 // 2) Provide a Context Value
@@ -47,7 +50,7 @@ export class App extends Component {
     return (
       <ApolloProvider client={client}>
         <div className="App">
-          <Form/>
+          {/* <Form/> */}
           {/* {timeFormat()} */}
           {/* <FormValidation/> */}
           {/* <FormValidationType2/> */}
@@ -56,7 +59,7 @@ export class App extends Component {
           {/* <FocusInput/> */}
           {/* <FRParentInput/> */}
           {/* <ClickCounter/> */}
-          {/* <HoverCounter/> */}
+          {/* <HoverCounter/> */} 
           {/* <User/> */}
           {/* <Test/> */}
           {/* <UserProvider value="Mukul Jain">
@@ -77,6 +80,9 @@ export class App extends Component {
           {/* <BottomScroller/> */}
           {/* <CustomAudioPlayer/> */}
           {/* <Hooks/> */}
+          {/* <RefHook/> */}
+          {/* <LimitValidation/> */}
+          <SignupForm/>
         </div>
       </ApolloProvider>
     );
