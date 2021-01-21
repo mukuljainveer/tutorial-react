@@ -31,6 +31,11 @@ import Form from "./stepform/Form";
 import RefHook from "./demo/RefHook";
 import LimitValidation from "./demo/validation/LimitValidation";
 import SignupForm from "./demo/validation/formik/SignupForm";
+import TimeArray from "./demo/TimeArray";
+import FormikHook from "./demo/validation/formik/FormikHook";
+import CustomCarousel from "./demo/CustomCarousel";
+import DateRange from "./demo/DateRange";
+// import Calendar from "./demo/Calendar";
 
 // 1) Create the Context
 // 2) Provide a Context Value
@@ -70,9 +75,9 @@ export class App extends Component {
           {/* <BookListClass/> */}
           {/* <Mic/> */}
 
-          {/* <ThemeProvider theme={theme}> */}
-            {/* <HoverEffect/>   */}
-            {/* <DatePicker/>
+          {/* <ThemeProvider theme={theme}>
+            <HoverEffect/>  
+            <DatePicker/>
           </ThemeProvider> */}
           {/* <ResponsiveDateRangePicker/> */}
 
@@ -82,7 +87,12 @@ export class App extends Component {
           {/* <Hooks/> */}
           {/* <RefHook/> */}
           {/* <LimitValidation/> */}
-          <SignupForm/>
+          {/* <SignupForm/> */}
+          {/* <TimeArray/> */}
+          {/* <Calendar/> */}
+          {/* <FormikHook/> */}
+          <CustomCarousel deviceType="mobile"/>
+          {/* <DateRange/> */}
         </div>
       </ApolloProvider>
     );
